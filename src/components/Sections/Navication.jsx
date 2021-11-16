@@ -1,5 +1,4 @@
 import React from 'react'
-import './Navication.css'
 
 const Navication = () => {
     return (

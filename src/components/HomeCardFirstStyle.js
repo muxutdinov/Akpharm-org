@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 70px;
+  margin-top: -100px;
   background: transparent;
   display: flex;
   flex-direction: row;
@@ -114,7 +114,7 @@ export const Team = styled.img`
   border-radius: 20px;
 `;
 export const Lesson = styled.img`
-margin-top: 20px;
+  margin-top: 20px;
   width: 480px;
   border-radius: 20px;
 `;

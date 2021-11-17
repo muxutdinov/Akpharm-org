@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./Navbar";
+import Navication from "./Sections/Navication";
 
 const PartnersItem = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <div>
+      <Navbar/>
+      {/* <Navication /> */}
+      PartnersItem
+    </div>
+  );
+};
 
-export default PartnersItem
+export default PartnersItem;

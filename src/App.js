@@ -1,10 +1,16 @@
 import "./App.css";
+import Routers from "./routers/Routers";
+import { BrowserRouter as Router } from "react-router-dom";
+import { createBrowserHistory } from "history";
 
 const App = () => {
+  const history = createBrowserHistory();
   return (
-   <div>
-     
-   </div>
+    <>
+      <Router history={history}>
+        <Routers />
+      </Router>
+    </>
   );
 };
 

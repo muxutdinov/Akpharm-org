@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import Navication from "./Sections/Navication";
 
 const Partners = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <div>
+      <Navication />
+      Partners
+    </div>
+  );
+};
 
-export default Partners
+export default Partners;

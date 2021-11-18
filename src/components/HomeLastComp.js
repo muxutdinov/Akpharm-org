@@ -5,6 +5,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: white;
 `;
 export const WrapperFirst = styled.div`
   height: 400px;
@@ -224,8 +225,8 @@ export const RightButton = styled.div`
 export const WrapperThird = styled.div`
   height: 300px;
   width: 100%;
-  background-color: yellow;
   display: flex;
+  background-color: transparent;
   justify-content: center;
   align-items: center;
 `;
@@ -287,10 +288,32 @@ export const ThirdMiddleText = styled.div`
   order: 2;
   flex-grow: 0;
   margin: 22px 0px;
+  margin-right: ${({ one }) => (one ? "60px" : "")};
 `;
 export const LastRightWrapper = styled.div`
-display: flex;
-`
+  margin-left: ${({ two }) => (two ? "130px" : "")};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 export const Imgs = styled.img`
-background: #70798B;
-`
+  width: 20px;
+  margin-right: 10px;
+`;
+export const LastText = styled.div`
+  width: 500px;
+  height: 26px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #768695;
+`;
+export const LastTextWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+`;

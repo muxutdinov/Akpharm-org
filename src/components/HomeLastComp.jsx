@@ -22,6 +22,8 @@ import {
   Input,
   IntupTitle,
   LastRightWrapper,
+  LastText,
+  LastTextWrapper,
   Location,
   Num,
   Phone,
@@ -137,12 +139,24 @@ const HomeLastComp = () => {
           <ThirdBigCon>
             <ThirdMiddleTitle>Biz bilan bogʻlaning</ThirdMiddleTitle>
             <LastRightWrapper>
-                <Imgs src={Call} />
-                <ThirdMiddleText>+998 71 208 67 84</ThirdMiddleText>
+              <Imgs src={Call} />
+              <ThirdMiddleText one>+998 71 208 67 84</ThirdMiddleText>
+            </LastRightWrapper>
+            <LastRightWrapper two>
+              <Imgs src={Loc} />
+              <ThirdMiddleText>
+                Olmazor tumani, Kichik halqa yoʻli koʻchasi, 5-A
+              </ThirdMiddleText>
             </LastRightWrapper>
           </ThirdBigCon>
         </ThirdContainer>
       </WrapperThird>
+      <hr />
+      <LastTextWrapper>
+        <LastText>
+          © 2021 Akpharm Distribution. Barcha huquqlar himoyalangan.
+        </LastText>
+      </LastTextWrapper>
     </Container>
   );
 };

@@ -1,12 +1,13 @@
 import React from "react";
-import Navication from "./Sections/Navication";
+import Navbar from "./Navbar";
+import {Container} from './PartnersStyle'
 
 const Partners = () => {
   return (
-    <div>
-      <Navication />
+    <Container>
+      <Navbar/>
       Partners
-    </div>
+    </Container>
   );
 };
 

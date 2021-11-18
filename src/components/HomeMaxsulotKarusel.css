@@ -87,3 +87,18 @@
 img {
   border-radius: 20px;
 }
+.LastButton {
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 525px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  width: 261px;
+  height: 51px;
+  background: #6001d3;
+  box-shadow: -10.6176px 14.1567px 35.3919px rgba(96, 1, 211, 0.301961);
+  border-radius: 12px;
+}

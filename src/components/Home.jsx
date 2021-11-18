@@ -6,7 +6,8 @@ import HomeCard from "./HomeCard";
 import HomeCardFirst from "./HomeCardFirst";
 import HomeCardSecond from "./HomeCardSecond";
 import CenterMode from "./HomeMaxsulotKarusel";
-
+import HomeCardThird from "./HomeCardThird";
+import AutoPlay from "./HomeLastKaru";
 const Home = () => {
   return (
     <HomeAllWrapper>
@@ -18,6 +19,8 @@ const Home = () => {
       <HomeCardFirst />
       <HomeCardSecond />
       <CenterMode/>
+      <HomeCardThird/>
+      <AutoPlay/>
     </HomeAllWrapper>
   );
 };

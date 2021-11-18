@@ -2,7 +2,6 @@ import styled from "styled-components";
 import main from "../assets/imges/main.png";
 
 export const HomeAllWrapper = styled.div`
-  margin-top: auto;
   background: #e5e5e5;
   height: fit-content;
   width: 100%;

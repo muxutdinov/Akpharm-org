@@ -3,7 +3,6 @@ import React from "react";
 import "./HomeMaxsulotKarusel.css";
 import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import img1 from "../assets/imges/main.png";
 import img2 from "../assets/imges/student.png";
@@ -63,9 +62,9 @@ const CenterMode = () => {
             </div>
           </div>
         </Slider>
+        <div className="LastButton">Barchasini Korish</div>
       </div>
     </>
   );
 };
-
 export default CenterMode;

@@ -13,6 +13,8 @@ const Routers = () => {
         <Route exact path="/categories" element={<Categories />} />
         <Route exact path="/partners" element={<Partners />} />
         <Route exact path="/item" element={<PartnersItem />} />
+        {/* <Route exact path="/categories"  element={<Categories/>} /> */}
+        <Route path="/categories/:type" element={<Categories />} />
       </Routes>
     </>
   );

@@ -1,18 +1,23 @@
-import React from 'react'
-import Navication from './Sections/Navication'
-import {Container} from './CategoriesStyle'
-import Navbar from './Navbar'
-import CategoriesComp from './CategoriesComp'
-const Categories = () => {
-    return (
-        <>
-        <Container>
-            <Navbar/>
-            Categories
-        <CategoriesComp/>
-        </Container>
-        </>
-    )
-}
+import React from "react";
+import Navication from "./Sections/Navication";
+import { Container } from "./CategoriesStyle";
+import Navbar from "./Navbar";
+import CategoriesComp from "./CategoriesComp";
+import AutoPlay from "./HomeLastKaru";
+import CategoriesLast from "./CategoriesLast";
 
-export default Categories
+const Categories = () => {
+  return (
+    <>
+      <Container>
+        <Navbar />
+        Categories
+        <CategoriesComp />
+        <AutoPlay />
+        <CategoriesLast/>
+      </Container>
+    </>
+  );
+};
+
+export default Categories;

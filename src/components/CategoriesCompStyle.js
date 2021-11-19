@@ -48,7 +48,11 @@ export const Sahifa = styled(sahifa)`
   width: 5.128483295440674px;
 `;
 export const Wrapper = styled.div`
-  margin-top: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  /* margin-left: 100px; */
+  /* margin-top: 50px; */
   display: flex;
   flex-direction: row;
   justify-content: center;

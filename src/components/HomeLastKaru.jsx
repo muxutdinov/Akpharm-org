@@ -4,7 +4,7 @@ import "./HomeLastKaru.css";
 import people1 from "../assets/imges/people1.png";
 import people2 from "../assets/imges/people2.png";
 import people3 from "../assets/imges/people3.png";
-export default class AutoPlay extends Component {
+class AutoPlay extends Component {
   render() {
     const settings = {
       dots: true,
@@ -87,3 +87,4 @@ export default class AutoPlay extends Component {
     );
   }
 }
+export default AutoPlay

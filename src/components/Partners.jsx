@@ -1,12 +1,15 @@
 import React from "react";
+import CategoriesLast from "./CategoriesLast";
 import Navbar from "./Navbar";
-import {Container} from './PartnersStyle'
+import PartnersComp from "./PartnersComp";
+import { Container } from "./PartnersStyle";
 
 const Partners = () => {
   return (
     <Container>
-      <Navbar/>
-      Partners
+      <Navbar />
+      <PartnersComp />
+      <CategoriesLast/>
     </Container>
   );
 };

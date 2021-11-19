@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
-import {Container} from './PartnersItemStyle'
+import { Container } from "./PartnersItemStyle";
 
 const PartnersItem = () => {
   return (
-    <>
-      <Navbar/>
+    <Container>
+      <Navbar />
       PartnersItem
-    </>
+    </Container>
   );
 };
 

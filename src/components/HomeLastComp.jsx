@@ -137,7 +137,7 @@ const HomeLastComp = () => {
             <ThirdMiddleText>Hamkorlar</ThirdMiddleText>
           </ThirdConCenter>
           <ThirdBigCon>
-            <ThirdMiddleTitle>Biz bilan bogʻlaning</ThirdMiddleTitle>
+            <ThirdMiddleTitle last>Biz bilan bogʻlaning</ThirdMiddleTitle>
             <LastRightWrapper>
               <Imgs src={Call} />
               <ThirdMiddleText one>+998 71 208 67 84</ThirdMiddleText>

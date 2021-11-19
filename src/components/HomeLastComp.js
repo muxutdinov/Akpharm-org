@@ -264,8 +264,9 @@ export const Num = styled.div`
   display: flex;
   align-items: center;
   color: #1f2022;
-`;
+  `;
 export const ThirdMiddleTitle = styled.div`
+margin-top: ${({last})=>last?"50px":""};
   margin-bottom: 20px;
   width: 200px;
   height: 14px;

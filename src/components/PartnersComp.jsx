@@ -33,7 +33,7 @@ const PartnersComp = () => {
       <Container>
         {second.map((value, index) => {
           return (
-            <Link to="/partners/item">
+            <Link to="/item">
               <Card key={index} >
                 <Img src={value.logo} />
               </Card>

@@ -117,4 +117,5 @@ const CategoriesComp = () => {
     </>
   );
 };
+
 export default CategoriesComp;

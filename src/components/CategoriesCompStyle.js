@@ -48,14 +48,9 @@ export const Sahifa = styled(sahifa)`
   width: 5.128483295440674px;
 `;
 export const Wrapper = styled.div`
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  /* margin-left: 100px; */
-  /* margin-top: 50px; */
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  align-self: stretch;
 `;
 export const BodyWrapper = styled.div`
   display: flex;
@@ -135,15 +130,21 @@ export const ImgWrapper = styled.div`
   height: 100px;
 `;
 export const SidebarWrapper = styled.div`
-  position: fixed;
+  display: flex;
+  width: 300px;
+  position: sticky;
+  left: 150px;
+  flex-direction: column;
+  top: 50px;
+  align-self: flex-start;
+  /* background-color: red; */
+  /* position: fixed;
   margin-right: 750px;
   margin-top: 70px;
   height: 300px;
   width: 170px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; */
   .nav {
     background-color: transparent;
     text-decoration: none;

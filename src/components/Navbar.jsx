@@ -29,7 +29,7 @@ const Navbar = () => {
           <Navication/>
         {/* <Wrap>Mahsulotlar katalogi</Wrap> */}
         {/* <Wrap>Hamkorlar</Wrap> */}
-        <Wrap>
+        {/* <Wrap> */}
           {/* <button
             onClick={() => {
               onLanguageHandle("uz");
@@ -51,7 +51,7 @@ const Navbar = () => {
           >
             en
           </button> */}
-        </Wrap>
+        {/* </Wrap> */}
         <Button>Ariza qoldirish</Button>
       </Wrapper>
     </Container>

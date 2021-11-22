@@ -1,14 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import './Navication.css'
-
+import "./Navication.css";
 
 const Navication = () => {
   return (
     <div className="NavContainer">
-      <NavLink exact className="nav" activeClassName="active-nav" to="/">
+      {/* <NavLink exact className="nav" activeClassName="active-nav" to="/">
         Home
-      </NavLink>
+      </NavLink> */}
       <NavLink
         exact
         className="nav"
@@ -23,16 +22,11 @@ const Navication = () => {
         activeClassName="active-nav"
         to="/partners"
       >
-        Partners
+        Hamkorlar
       </NavLink>
-      <NavLink
-        exact
-        className="nav"
-        activeClassName="active-nav"
-        to="/item"
-      >
+      {/* <NavLink exact className="nav" activeClassName="active-nav" to="/item">
         partnersItem
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };

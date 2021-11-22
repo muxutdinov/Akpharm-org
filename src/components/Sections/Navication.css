@@ -2,14 +2,11 @@
   margin: 10px;
   color: #fff;
   text-decoration: none;
+  /* background-color: red; */
 }
 .active-nav {
   color: chartreuse;
 }
 * {
   color: #fff;
-}
-.NavContainer {
-  margin-right: -250px;
-  margin-left: 100px;
 }

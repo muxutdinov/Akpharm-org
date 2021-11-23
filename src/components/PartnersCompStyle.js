@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 60vh;
+  /* height: 60vh; */
+  height: fit-content;
   width: 900px;
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +12,7 @@ export const Container = styled.div`
   margin-top: 40px;
   outline: none;
   background: transparent;
+  margin-bottom: 100px;
   @media screen and (max-width: 900px) and (min-width: 500px) {
     width: 500px;
     flex-wrap: wrap;
@@ -27,13 +29,15 @@ export const Container = styled.div`
   }
 `;
 export const Top = styled.div`
+  margin-top: 40px;
+  margin-left: 40px;
   margin-right: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
 `;
 export const Title = styled.div`
-  height: 18px;
+  height: 12px;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -45,7 +49,7 @@ export const Title = styled.div`
 `;
 export const Text = styled.div`
   width: 138px;
-  height: 18px;
+  height: 12px;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -95,7 +99,7 @@ export const Img = styled.img`
 `;
 export const Imgs = styled.img`
   /* height: 20px; */
-  width: 10px;
+  width: 8px;
 `;
 export const CardText = styled.div`
   font-size: 15px;

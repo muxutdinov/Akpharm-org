@@ -239,7 +239,7 @@ export const Num = styled.div`
   color: #1f2022;
 `;
 export const ThirdMiddleTitle = styled.div`
-  margin-top: ${({ last }) => (last ? "50px" : "")};
+  margin-top: 50px;
   margin-bottom: 20px;
   width: 200px;
   height: 14px;

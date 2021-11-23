@@ -9,7 +9,7 @@ const Partners = () => {
     <Container>
       <TopContainer>
           <Navbar />
-          <Text>Akpharmdagi mahsulotlar katalogi</Text>
+          <Text>Hamkorlarimiz</Text>
         </TopContainer>
       <PartnersComp />
       <CategoriesLast/>

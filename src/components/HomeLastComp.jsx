@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Calling from "../assets/icons/Calling.png";
 import Locations from "../assets/icons/Location.png";
 import iconblue from "../assets/icons/iconblue.png";
@@ -133,8 +134,12 @@ const HomeLastComp = () => {
           </ThirdBigCon>
           <ThirdConCenter>
             <ThirdMiddleTitle>Kompaniya haqida</ThirdMiddleTitle>
-            <ThirdMiddleText>Maxsulotlar katalogi</ThirdMiddleText>
-            <ThirdMiddleText>Hamkorlar</ThirdMiddleText>
+            <Link to="categories">
+              <ThirdMiddleText>Maxsulotlar katalogi</ThirdMiddleText>
+            </Link>
+            <Link to="partners">
+              <ThirdMiddleText>Hamkorlar</ThirdMiddleText>
+            </Link>
           </ThirdConCenter>
           <ThirdBigCon>
             <ThirdMiddleTitle last>Biz bilan bogʻlaning</ThirdMiddleTitle>

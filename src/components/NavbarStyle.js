@@ -40,6 +40,7 @@ export const Wrap = styled.div`
   }
 `;
 export const Button = styled.button`
+  /* margin-left: 100px; */
   color: #000;
   border: none;
   cursor: pointer;

@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Navication from "./Sections/Navication";
-import { Container, HomeAllWrapper, Text } from "./HomeStyle";
+import { TopContainer, HomeAllWrapper, Text } from "./HomeStyle";
 import HomeCard from "./HomeCard";
 import HomeCardFirst from "./HomeCardFirst";
 import HomeCardSecond from "./HomeCardSecond";
@@ -12,10 +12,10 @@ import HomeLastComp from "./HomeLastComp.jsx";
 const Home = () => {
   return (
     <HomeAllWrapper>
-      <Container>
+      <TopContainer>
         <Navbar />
         <Text>Ishonchli tibbiyot maxsulotlari distribyutori!</Text>
-      </Container>
+      </TopContainer>
       <HomeCard />
       <HomeCardFirst />
       <HomeCardSecond />

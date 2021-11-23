@@ -10,6 +10,7 @@ import {
   Card,
   Text,
   Img,
+  Imgs
 } from "./PartnersCompStyle";
 
 const PartnersComp = () => {
@@ -26,15 +27,17 @@ const PartnersComp = () => {
   return (
     <BigContainer>
       <Top>
-        <Title>Asosiy sahifa</Title>
-        <Img src={icon} />
+        <Link to="/">
+          <Title>Asosiy sahifa</Title>
+        </Link>
+        <Imgs src={icon} />
         <Text>Hamkorlarimiz</Text>
       </Top>
       <Container>
         {second.map((value, index) => {
           return (
             <Link to="/item">
-              <Card key={index} >
+              <Card key={index}>
                 <Img src={value.logo} />
               </Card>
             </Link>

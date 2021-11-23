@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import icon from "../assets/icons/sahifaa.svg";
 import {
@@ -71,9 +72,13 @@ const PartnersItemComp = () => {
       <Container>
         <Wrapper>
           <Top>
-            <Item1>Asosiy sahifa</Item1>
+            <Link to="/">
+              <Item1>Asosiy sahifa</Item1>
+            </Link>
             <img src={icon} />
-            <Item2>Hamkorlarimiz</Item2>
+            <Link to="/partners">
+              <Item2>Hamkorlarimiz</Item2>
+            </Link>
             <img src={icon} />
             <Item3>HEBU MEDICAL</Item3>
           </Top>

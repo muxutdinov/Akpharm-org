@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./CategoriesStyle";
+import { Container, TopContainer, Text } from "./CategoriesStyle";
 import Navbar from "./Navbar";
 import CategoriesComp from "./CategoriesComp";
 import AutoPlay from "./HomeLastKaru";
@@ -9,11 +9,13 @@ const Categories = () => {
   return (
     <>
       <Container>
-        <Navbar />
-        Categories
+        <TopContainer>
+          <Navbar />
+          <Text>Akpharmdagi mahsulotlar katalogi</Text>
+        </TopContainer>
         <CategoriesComp />
         <AutoPlay />
-        <CategoriesLast/>
+        <CategoriesLast />
       </Container>
     </>
   );

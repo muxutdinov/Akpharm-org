@@ -93,6 +93,10 @@ export const Img = styled.img`
   /* height: 20px; */
   width: 40%;
 `;
+export const Imgs = styled.img`
+  /* height: 20px; */
+  width: 10px;
+`;
 export const CardText = styled.div`
   font-size: 15px;
   height: 20px;

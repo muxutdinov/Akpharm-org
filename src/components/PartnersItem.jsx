@@ -2,15 +2,18 @@ import React from "react";
 import CategoriesLast from "./CategoriesLast";
 import Navbar from "./Navbar";
 import PartnersItemComp from "./PartnersItemComp";
-import { Container } from "./PartnersItemStyle";
+import { Container ,TopContainer,Text} from "./PartnersItemStyle";
 
 const PartnersItem = () => {
   return (
-      <Container>
+    <Container>
+      <TopContainer>
         <Navbar />
-        <PartnersItemComp />
-        <CategoriesLast/>
-      </Container>
+        <Text>HEBU MEDICAL</Text>
+      </TopContainer>
+      <PartnersItemComp />
+      <CategoriesLast />
+    </Container>
   );
 };
 

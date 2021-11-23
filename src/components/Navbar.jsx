@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import top from "../assets/icons/top.svg";
 import solid from "../assets/icons/solid.svg";
 import Navication from "./Sections/Navication";
@@ -19,18 +19,31 @@ const Navbar = () => {
   // i18n.changeLanguage(newLang);
   // window.localStorage.setItem("language", newLang);
   //   };
+  useEffect(() => {
+    window.onscroll = scrollHead;
+  }, []);
+  const scrollHead = () => {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      document.getElementById("header").style.background = "#fff";
+    } else {
+      document.getElementById("header").style.background = "transparent";
+    }
+  };
   return (
-    <Container>
+    <Container id="header">
       <WrapperSecond>
         <Iconone src={top} />
         <Icontwo src={solid} />
       </WrapperSecond>
       <Wrapper>
-          <Navication/>
+        <Navication />
         {/* <Wrap>Mahsulotlar katalogi</Wrap> */}
         {/* <Wrap>Hamkorlar</Wrap> */}
         {/* <Wrap> */}
-          {/* <button
+        {/* <button
             onClick={() => {
               onLanguageHandle("uz");
             }}

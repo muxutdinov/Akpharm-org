@@ -10,18 +10,19 @@ export const Container = styled.div`
 `;
 export const Top = styled.div`
   margin-top: 20px;
+  margin-left: 150px;
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
 `;
 export const TopWrapperone = styled.div`
-  width: 100px;
   height: 18px;
+  width: 80px;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 100%;
   color: #1f2022;
   flex: none;
@@ -30,12 +31,12 @@ export const TopWrapperone = styled.div`
   margin: 0px 8px;
 `;
 export const TopWrappertwo = styled.div`
-  width: 260px;
+  width: 200px;
   height: 18px;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 100%;
   color: #70798b;
   flex: none;

@@ -1,4 +1,7 @@
 import React from "react";
+import "./Categories.css";
+import "./Sections/Navication.css";
+import { NavLink } from "react-router-dom";
 import Calling from "../assets/icons/Calling.png";
 import Locations from "../assets/icons/Location.png";
 import iconblue from "../assets/icons/iconblue.png";
@@ -93,8 +96,20 @@ const CategoriesLast = () => {
           </ThirdBigCon>
           <ThirdConCenter>
             <ThirdMiddleTitle>Kompaniya haqida</ThirdMiddleTitle>
-            <ThirdMiddleText>Maxsulotlar katalogi</ThirdMiddleText>
-            <ThirdMiddleText>Hamkorlar</ThirdMiddleText>
+            <NavLink
+              to="/categories"
+              className="nav"
+              activeClassName="nav-active"
+            >
+              <ThirdMiddleText>Maxsulotlar katalogi</ThirdMiddleText>
+            </NavLink>
+            <NavLink
+              to="/partners"
+              className="nav"
+              activeClassName="nav-active"
+            >
+              <ThirdMiddleText>Hamkorlar</ThirdMiddleText>
+            </NavLink>
           </ThirdConCenter>
           <ThirdBigCon>
             <ThirdMiddleTitle last>Biz bilan bogʻlaning</ThirdMiddleTitle>
@@ -120,5 +135,4 @@ const CategoriesLast = () => {
     </>
   );
 };
-
 export default CategoriesLast;

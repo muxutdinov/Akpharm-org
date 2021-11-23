@@ -2,12 +2,15 @@ import React from "react";
 import CategoriesLast from "./CategoriesLast";
 import Navbar from "./Navbar";
 import PartnersComp from "./PartnersComp";
-import { Container } from "./PartnersStyle";
+import { Container, TopContainer, Text } from "./PartnersStyle";
 
 const Partners = () => {
   return (
     <Container>
-      <Navbar />
+      <TopContainer>
+          <Navbar />
+          <Text>Akpharmdagi mahsulotlar katalogi</Text>
+        </TopContainer>
       <PartnersComp />
       <CategoriesLast/>
     </Container>

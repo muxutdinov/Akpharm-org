@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-// import "/CategoriesComp.css";
+import { NavLink, Link } from "react-router-dom";
 import axios from "axios";
 
 import {
@@ -44,7 +43,9 @@ const CategoriesComp = () => {
     <>
       <Container>
         <Top>
-          <TopWrapperone>Asosiy sahifa</TopWrapperone>
+          <Link to="/" className="Asosiy">
+            <TopWrapperone>Asosiy sahifa</TopWrapperone>
+          </Link>
           <Sahifa />
           <TopWrappertwo>Akpharmdagi maxsulotlar katalogi</TopWrappertwo>
         </Top>

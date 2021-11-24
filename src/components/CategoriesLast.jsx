@@ -9,6 +9,7 @@ import Call from "../assets/icons/Call.png";
 import Loc from "../assets/icons/Loc.png";
 import {
   Area,
+  Border,
   Img,
   Imgs,
   Input,
@@ -90,7 +91,7 @@ const CategoriesLast = () => {
       </WrapperSecond>
       <WrapperThird>
         <ThirdContainer>
-          <ThirdBigCon>
+          <ThirdBigCon one>
             <ThirdImg src={iconblue} />
             <Num>+998 71 208 67 84</Num>
           </ThirdBigCon>
@@ -126,8 +127,8 @@ const CategoriesLast = () => {
           </ThirdBigCon>
         </ThirdContainer>
       </WrapperThird>
-      <hr />
       <LastTextWrapper>
+        <Border/>
         <LastText>
           © 2021 Akpharm Distribution. Barcha huquqlar himoyalangan.
         </LastText>

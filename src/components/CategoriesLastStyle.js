@@ -1,34 +1,43 @@
 import styled from "styled-components";
 
+export const CategoriesLastAllWrapper = styled.div`
+  height: fit-content;
+  width: fit-content;
+  background-color: whitesmoke;
+`;
 export const WrapperSecond = styled.div`
   display: flex;
   height: 500px;
   width: 100%;
-  background-color: whitesmoke;
-  @media only screen and (max-width: 600px) {
+  background-color: transparent;
+  @media only screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
     height: 800px;
-    width: 500px;
+    /* height: fit-content; */
+    width: 100%;
   }
   @media only screen and (max-width: 900px) and (min-width: 600px) {
     display: flex;
     flex-direction: column;
     height: 800px;
-    width: 600px;
+    width: fit-content;
   }
 `;
 export const SecondOne = styled.div`
+  /* flex: 3; */
+  width: 100%;
   background-color: transparent;
-  flex: 3;
 `;
 export const SecondLeft = styled.div`
   margin-top: 50px;
   margin-left: 100px;
   /* display: flex; */
-  @media screen and (max-width: 600px) {
-    margin-right: 100px;
-  }
+  width: 100%;
+  /* @media screen and (max-width: 600px) { */
+  /* width: fit-content; */
+  /* margin-right: 100px; */
+  /* } */
   @media screen and (max-width: 900px) and (min-width: 600px) {
     margin-right: 200px;
   }
@@ -197,9 +206,12 @@ export const ThirdContainer = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 700px) and (min-width: 320px) {
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
     flex-direction: column;
+    margin-top: 30px;
   }
 `;
 export const ThirdBigCon = styled.div`
@@ -208,8 +220,9 @@ export const ThirdBigCon = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 700px) {
     flex: 1;
+    margin-left: ${({ one }) => (one ? "100px" : "")};
   }
 `;
 export const ThirdConCenter = styled.div`
@@ -286,8 +299,22 @@ export const LastText = styled.div`
 `;
 export const LastTextWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100px;
   width: 100%;
+  @media only screen and (max-width: 700px) {
+    position: relative;
+    margin-top: 300px;
+    margin-left: 150px;
+  }
+`;
+export const Border = styled.hr`
+  height: 1px;
+  width: 100%;
+  /* background-color: red; */
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
 `;

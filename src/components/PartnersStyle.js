@@ -29,4 +29,8 @@ export const Text = styled.div`
   line-height: 160%;
   text-align: center;
   color: #ffffff;
+  @media only screen and (max-width: 900px) and (min-width: 320px) { 
+   width: 200px;
+   font-size: 18px;
+  } 
 `;

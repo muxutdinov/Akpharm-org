@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 1300px;
+  width: 100%;
   height: 80px;
   background: transparent;
 `;
@@ -19,6 +19,9 @@ export const Wrapper = styled.ul`
   width: 700px;
   margin-left: 200px;
   margin-right: 50px;
+  @media only screen and (max-width: 900px) and (min-width: 320px) {
+    width: 300px;
+  }
 `;
 export const Wrap = styled.div`
   width: 91px;
@@ -37,6 +40,9 @@ export const Wrap = styled.div`
     transition: all 0.5s;
     cursor: pointer;
     color: blue;
+  }
+  @media only screen and (max-width: 900px) and (min-width: 320px) {
+    width: 300px;
   }
 `;
 export const Button = styled.button`
@@ -57,6 +63,9 @@ export const Button = styled.button`
   order: 5;
   flex-grow: 0;
   margin: 0px 44px;
+  @media only screen and (max-width: 900px) and (min-width: 320px) {
+    display: none;
+  }
 `;
 export const WrapperSecond = styled.div`
   display: flex;

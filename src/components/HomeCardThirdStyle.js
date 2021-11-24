@@ -5,7 +5,9 @@ export const Container = styled.div`
   margin-top: 100px;
   height: 900px;
   width: 100%;
-  /* background-color: yellowgreen; */
+  @media only screen and (max-width: 600px) {
+    height: 1350px;
+  }
 `;
 export const MainCard = styled.div`
   display: flex;
@@ -60,6 +62,11 @@ export const CardFirst = styled.div`
   justify-content: space-evenly;
   height: 350px;
   width: 350px;
+  @media only screen and (max-width: 600px) {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+  }
 `;
 export const CardSecond = styled.div`
   top: 250px;
@@ -70,6 +77,15 @@ export const CardSecond = styled.div`
   justify-content: space-evenly;
   height: 350px;
   width: 350px;
+  @media only screen and (max-width: 1000px) and (min-width: 600px) {
+    position: absolute;
+    left: 300px;
+  }
+  @media only screen and (max-width: 600px) {
+    position: absolute;
+    top: 700px;
+    left: 100px;
+  }
 `;
 export const CardThird = styled.div`
   top: 500px;
@@ -80,6 +96,12 @@ export const CardThird = styled.div`
   justify-content: space-evenly;
   height: 350px;
   width: 350px;
+  /* background-color: yellow; */
+  @media only screen and (max-width: 600px) {
+    position: absolute;
+    top: 1000px;
+    left: 100px;
+  }
 `;
 export const ImgWrapper = styled.div`
   position: relative;

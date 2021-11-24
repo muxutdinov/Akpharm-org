@@ -15,6 +15,9 @@ export const Wrapperone = styled.div`
   height: 700px;
   position: relative;
   /* background-color: red; */
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 export const Wrappertwo = styled.div`
   display: flex;
@@ -24,6 +27,9 @@ export const Wrappertwo = styled.div`
   width: 650px;
   height: 700px;
   /* background-color: green; */
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 export const Imgfirst = styled.img`
   margin-left: 80px;
@@ -41,6 +47,10 @@ export const Imgsecond = styled.img`
 `;
 export const MiniCon = styled.div`
   margin-bottom: 50px;
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    justify-content: ${({ start }) => (start ? "start" : "center")};
+  }
 `;
 export const Title = styled.div`
   width: 280px;
@@ -69,17 +79,25 @@ export const Text = styled.div`
   order: 1;
   flex-grow: 0;
   margin: 16px 0px;
+  @media only screen and (max-width: 1000px) {
+    margin-left: 100px;
+    margin-right: 50px;
+    width: 100%;
+  }
 `;
 export const Statistics = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 `;
 export const MiniTitle = styled.div`
   margin: 30px;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 1000px) and (min-width:800px) {
+    padding: 0px 50px;
+  }
 `;
 export const Border = styled.div`
   width: 1px;

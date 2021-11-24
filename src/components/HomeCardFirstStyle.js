@@ -15,8 +15,11 @@ export const Wrapper = styled.div`
   flex-direction: row;
 `;
 export const WrapFirst = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 1000px) {
+  }
 `;
 export const Sarlavha = styled.div`
   width: 500px;
@@ -31,6 +34,11 @@ export const Sarlavha = styled.div`
   order: 0;
   flex-grow: 0;
   margin: 16px 0px;
+  @media only screen and (max-width: 500px) {
+    width: 300px;
+    margin-left: 50px;
+    margin-top: -150px;
+  }
 `;
 export const Text = styled.div`
   width: 468.47px;
@@ -45,31 +53,52 @@ export const Text = styled.div`
   order: 1;
   flex-grow: 0;
   margin: 16px 0px;
+  @media only screen and (max-width: 500px) {
+    /* margin-top: 100px; */
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
 `;
 export const Box = styled.div`
-  position: relative;
+  position: absolute;
+  top: 250px;
   display: flex;
-  flex-direction: row;
+  width: 500px;
+  @media only screen and (max-width: 500px) {
+    margin-top: 100px;
+    width: 300px;
+    margin-left: 50px;
+    top: 0;
+  }
 `;
 export const BoxChild = styled.div`
   margin-top: 20px;
-  position: absolute;
   top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media only screen and (max-width: 500px) {
+    position: absolute;
+    bottom: 280px;
+    /* right: 100px; */
+  }
 `;
 export const BoxChilds = styled.div`
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  position: absolute;
   top: 100px;
   left: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media only screen and (max-width: 500px) {
+    position: absolute;
+    top: 180px;
+    left: 0px;
+  }
 `;
 export const Img = styled.img`
   height: 30px;
@@ -108,6 +137,9 @@ export const WrapSecond = styled.div`
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
 `;
 export const Team = styled.img`
   width: 480px;

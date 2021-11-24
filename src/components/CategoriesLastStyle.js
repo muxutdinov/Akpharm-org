@@ -10,14 +10,15 @@ export const WrapperSecond = styled.div`
   height: 500px;
   width: 100%;
   background-color: transparent;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1050px) and (min-width: 900px) {
     display: flex;
     flex-direction: column;
     height: 800px;
     /* height: fit-content; */
     width: 100%;
+    scroll-snap-type: none;
   }
-  @media only screen and (max-width: 900px) and (min-width: 600px) {
+  @media only screen and (max-width: 900px) and (min-width: 300px) {
     display: flex;
     flex-direction: column;
     height: 800px;
@@ -38,7 +39,7 @@ export const SecondLeft = styled.div`
   /* width: fit-content; */
   /* margin-right: 100px; */
   /* } */
-  @media screen and (max-width: 900px) and (min-width: 600px) {
+  @media screen and (max-width: 900px) and (min-width: 300px) {
     margin-right: 200px;
   }
 `;
@@ -79,16 +80,16 @@ export const SecondLeftText = styled.div`
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
-  @media screen and (max-width: 600px) {
-    width: 350px;
-    font-size: 16px;
-    margin-right: 100px;
-  }
   @media screen and (max-width: 900px) and (min-width: 600px) {
     width: 500px;
     font-size: 20px;
     margin-right: 200px;
     margin-bottom: 50px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 350px;
+    font-size: 16px;
+    margin-right: 100px;
   }
 `;
 export const SecondLastWrapper = styled.div`
@@ -146,11 +147,11 @@ export const SecondRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  @media screen and (max-width: 600px) {
-    margin-left: 100px;
-  }
   @media screen and (max-width: 900px) and (min-width: 600px) {
-    margin-left: 200px;
+    /* margin-left: 200px; */
+  }
+  @media screen and (max-width: 600px) {
+    margin-right: 400px;
   }
 `;
 export const RightInputWrapper = styled.div`
@@ -307,7 +308,7 @@ export const LastTextWrapper = styled.div`
   @media only screen and (max-width: 700px) {
     position: relative;
     margin-top: 300px;
-    margin-left: 150px;
+    margin-left: 50px;
   }
 `;
 export const Border = styled.hr`

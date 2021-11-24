@@ -47,7 +47,7 @@ import {
   WrapperFirst,
   WrapperSecond,
   WrapperThird,
-} from "./HomeLastComp";
+} from "./HomeLastCompStyle";
 
 const HomeLastComp = () => {
   return (

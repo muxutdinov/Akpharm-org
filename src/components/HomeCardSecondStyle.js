@@ -4,6 +4,9 @@ export const Container = styled.div`
   width: 100%;
   height: 500px;
   background-color: #fff;
+  @media only screen and (max-width: 1000px) {
+    height: fit-content;
+  }
 `;
 export const Wrapper = styled.div`
   margin-top: 80px;
@@ -12,7 +15,7 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 export const Title = styled.div`
-margin-top: 100px;
+  margin-top: 100px;
   margin-left: 350px;
   width: 543px;
   height: 51px;
@@ -23,12 +26,24 @@ margin-top: 100px;
   line-height: 51px;
   text-align: center;
   color: #011a61;
+  @media only screen and (max-width: 900px) and (min-width: 600px) {
+    font-size: 34px;
+    margin-left: 150px;
+  }
+  @media only screen and (max-width: 600px) {
+    margin-left: -50px;
+    font-size: 32px;
+  }
 `;
 export const Box = styled.div`
   width: 1100px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /* background-color: red; */
+  @media only screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
 `;
 export const BoxBir = styled.div`
   display: flex;

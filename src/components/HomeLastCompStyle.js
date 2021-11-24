@@ -12,6 +12,12 @@ export const WrapperFirst = styled.div`
   width: 100%;
   background-color: yellow;
   display: flex;
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
 `;
 export const FirstOne = styled.div`
   display: flex;
@@ -22,6 +28,9 @@ export const FirstOne = styled.div`
 export const FirstLeft = styled.div`
   display: flex;
   flex-direction: column;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 export const FirstTitle = styled.div`
   width: 433px;
@@ -37,6 +46,9 @@ export const FirstTitle = styled.div`
   order: 0;
   flex-grow: 0;
   margin: 16px 0px;
+  @media only screen and (max-width: 1000px) {
+  font-size: 32px;
+  }
 `;
 export const FirstText = styled.div`
   width: 400px;
@@ -51,6 +63,9 @@ export const FirstText = styled.div`
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 export const FirstButton = styled.div`
   cursor: pointer;
@@ -79,14 +94,25 @@ export const FirstTwo = styled.div`
 `;
 export const FirstRight = styled.div`
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  @media only screen and (max-width: 1000px) {
+    height: 100%;
+    width: 100%;
+  }
 `;
 export const FirstRightTop = styled.div`
   display: flex;
+  justify-content: space-evenly;
   margin-bottom: 5px;
+  flex-wrap: wrap;
 `;
 export const FirstRightItem = styled.div`
-  margin-right: 15px;
+  margin: 10px;
+  /* margin-right: 15px; */
   width: 150px;
   height: 85px;
   background: #ffffff;
@@ -94,7 +120,9 @@ export const FirstRightItem = styled.div`
 `;
 export const FirstRightButtom = styled.div`
   display: flex;
+  justify-content: space-evenly;
   margin-top: 5px;
+  flex-wrap: wrap;
 `;
 export const WrapperSecond = styled.div`
   display: flex;

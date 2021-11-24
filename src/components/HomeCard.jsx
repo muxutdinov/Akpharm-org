@@ -28,20 +28,21 @@ const HomeCard = () => {
         <Imgsecond src={team} />
       </Wrapperone>
       <Wrappertwo>
-        <MiniCon>
+        <MiniCon start>
           <Title>Biz haqimizda</Title>
         </MiniCon>
-        <MiniCon>
+        <MiniCon middle>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-            quasi placeat sapiente similique sed, laboriosam perspiciatis
-            quisquam, molestiae ipsa ad alias! Nobis ducimus facere debitis
-            laboriosam et nemo ab eos ipsam, dolorem quidem beatae maiores hic
-            quibusdam praesentium delectus temporibus nihil voluptatibus
-            pariatur? Nam debitis unde, at reiciendis nisi fugit?
+            Akpharm - bu sheriklar va xodimlar bilan ishonchli, halol
+            munosabatlarga asoslangan kompaniya. Biz o'z biznesimizni kompaniya
+            tashkil etilganidan buyon o'zgarmagan qadriyatlar va urf -odatlar
+            asosida quramiz. Muvaffaqiyatlarimizni biz bilan umumiy biznes bilan
+            shug'ullanadigan odamlar bilan bo'lishish biz uchun muhim. Biz
+            rivojlanishimizni biz va mijozlarimiz oldida turgan muammolarni
+            birgalikda hal qilishda ko'ramiz.
           </Text>
         </MiniCon>
-        <MiniCon>
+        <MiniCon last>
           <Statistics>
             <MiniTitle>
               <Number>340</Number>

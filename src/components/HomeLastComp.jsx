@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Calling from "../assets/icons/Calling.png";
 import Locations from "../assets/icons/Location.png";
 import iconblue from "../assets/icons/iconblue.png";
@@ -47,6 +47,7 @@ import {
   WrapperFirst,
   WrapperSecond,
   WrapperThird,
+  Border
 } from "./HomeLastCompStyle";
 
 const HomeLastComp = () => {
@@ -128,18 +129,26 @@ const HomeLastComp = () => {
       </WrapperSecond>
       <WrapperThird>
         <ThirdContainer>
-          <ThirdBigCon>
+          <ThirdBigCon one>
             <ThirdImg src={iconblue} />
             <Num>+998 71 208 67 84</Num>
           </ThirdBigCon>
           <ThirdConCenter>
             <ThirdMiddleTitle>Kompaniya haqida</ThirdMiddleTitle>
-            <Link to="categories">
+            <NavLink
+              to="/categories"
+              className="nav"
+              activeClassName="nav-active"
+            >
               <ThirdMiddleText>Maxsulotlar katalogi</ThirdMiddleText>
-            </Link>
-            <Link to="partners">
+            </NavLink>
+            <NavLink
+              to="/partners"
+              className="nav"
+              activeClassName="nav-active"
+            >
               <ThirdMiddleText>Hamkorlar</ThirdMiddleText>
-            </Link>
+            </NavLink>
           </ThirdConCenter>
           <ThirdBigCon>
             <ThirdMiddleTitle last>Biz bilan bogʻlaning</ThirdMiddleTitle>
@@ -156,8 +165,8 @@ const HomeLastComp = () => {
           </ThirdBigCon>
         </ThirdContainer>
       </WrapperThird>
-      <hr />
       <LastTextWrapper>
+        <Border />
         <LastText>
           © 2021 Akpharm Distribution. Barcha huquqlar himoyalangan.
         </LastText>

@@ -102,3 +102,11 @@ img {
   box-shadow: -10.6176px 14.1567px 35.3919px rgba(96, 1, 211, 0.301961);
   border-radius: 12px;
 }
+@media only screen and (max-width: 1000px) {
+.Container {
+    display: none;
+  }
+  .LastButton{
+    margin-left: 100px;
+  }
+}

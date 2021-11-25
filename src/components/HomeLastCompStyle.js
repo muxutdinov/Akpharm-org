@@ -128,15 +128,39 @@ export const WrapperSecond = styled.div`
   display: flex;
   height: 500px;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: transparent;
+  @media only screen and (max-width: 1050px) and (min-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    /* height: fit-content; */
+    width: 100%;
+    scroll-snap-type: none;
+  }
+  @media only screen and (max-width: 900px) and (min-width: 300px) {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: fit-content;
+  }
 `;
 export const SecondOne = styled.div`
-  flex: 3;
+  /* flex: 3; */
+  width: 100%;
+  background-color: transparent;
 `;
 export const SecondLeft = styled.div`
   margin-top: 50px;
   margin-left: 100px;
   /* display: flex; */
+  width: 100%;
+  /* @media screen and (max-width: 600px) { */
+  /* width: fit-content; */
+  /* margin-right: 100px; */
+  /* } */
+  @media screen and (max-width: 900px) and (min-width: 300px) {
+    margin-right: 200px;
+  }
 `;
 export const SecondLeftTitle = styled.div`
   width: 700px;
@@ -151,6 +175,16 @@ export const SecondLeftTitle = styled.div`
   order: 0;
   flex-grow: 0;
   margin: 24px 0px;
+  @media screen and (max-width: 600px) {
+    /* margin-right: 200px; */
+    width: 350px;
+    font-size: 30px;
+  }
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    /* margin-right: 200px; */
+    width: 500px;
+    font-size: 38px;
+  }
 `;
 export const SecondLeftText = styled.div`
   width: 635px;
@@ -165,6 +199,17 @@ export const SecondLeftText = styled.div`
   order: 1;
   flex-grow: 0;
   margin: 24px 0px;
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    width: 500px;
+    font-size: 20px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 350px;
+    font-size: 16px;
+    margin-right: 100px;
+  }
 `;
 export const SecondLastWrapper = styled.div`
   display: flex;
@@ -180,6 +225,12 @@ export const Phone = styled.div`
   font-size: 22px;
   line-height: 100%;
   color: #011a61;
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    font-size: 20px;
+  }
 `;
 export const Location = styled.div`
   margin-left: 20px;
@@ -191,6 +242,12 @@ export const Location = styled.div`
   font-size: 22px;
   line-height: 100%;
   color: #011a61;
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    font-size: 20px;
+  }
 `;
 export const Img = styled.img``;
 export const PhoneWrapper = styled.div`
@@ -202,12 +259,19 @@ export const SecondTwo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 `;
 export const SecondRight = styled.div`
   margin-right: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    /* margin-left: 200px; */
+  }
+  @media screen and (max-width: 600px) {
+    margin-right: 400px;
+  }
 `;
 export const RightInputWrapper = styled.div`
   margin-top: 10px;
@@ -262,6 +326,13 @@ export const ThirdContainer = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
+  @media only screen and (max-width: 700px) and (min-width: 320px) {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
 `;
 export const ThirdBigCon = styled.div`
   flex: 2;
@@ -269,12 +340,19 @@ export const ThirdBigCon = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  @media only screen and (max-width: 700px) {
+    flex: 1;
+    margin-left: ${({ one }) => (one ? "100px" : "")};
+  }
 `;
 export const ThirdConCenter = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media only screen and (max-width: 900px) {
+    flex: 1;
+  }
 `;
 export const ThirdImg = styled.img`
   margin-right: 150px;
@@ -294,7 +372,7 @@ export const Num = styled.div`
   color: #1f2022;
 `;
 export const ThirdMiddleTitle = styled.div`
-  margin-top: ${({ last }) => (last ? "50px" : "")};
+  margin-top: 50px;
   margin-bottom: 20px;
   width: 200px;
   height: 14px;
@@ -341,8 +419,22 @@ export const LastText = styled.div`
 `;
 export const LastTextWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100px;
   width: 100%;
+  @media only screen and (max-width: 700px) {
+    position: relative;
+    margin-top: 300px;
+    margin-left: 50px;
+  }
+`;
+export const Border = styled.hr`
+  height: 1px;
+  width: 100%;
+  /* background-color: red; */
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
 `;
